@@ -14,12 +14,6 @@ class ApplicationController < ActionController::Base
     unless current_user
       flash[:alert] = "Please log in"
       redirect_to new_session_url
+     end
     end
   end
-
-
-
-
-
-
-end
